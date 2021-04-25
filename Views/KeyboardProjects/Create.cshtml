@@ -1,0 +1,109 @@
+﻿@model KeyboardProjectAppSimple.Models.KeyboardProject
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>KeyboardProject</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ProjectName" class="control-label"></label>
+                <input asp-for="ProjectName" class="form-control" />
+                <span asp-validation-for="ProjectName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectKeyboardCase" class="control-label"></label>
+                <input asp-for="ProjectKeyboardCase" class="form-control" />
+                <span asp-validation-for="ProjectKeyboardCase" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectKeyboardCasePrice" class="control-label"></label>
+                <input asp-for="ProjectKeyboardCasePrice" class="form-control" />
+                <span asp-validation-for="ProjectKeyboardCasePrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectSwitchplate" class="control-label"></label>
+                <input asp-for="ProjectSwitchplate" class="form-control" />
+                <span asp-validation-for="ProjectSwitchplate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectSwitchplatePrice" class="control-label"></label>
+                <input asp-for="ProjectSwitchplatePrice" class="form-control" />
+                <span asp-validation-for="ProjectSwitchplatePrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectPcb" class="control-label"></label>
+                <input asp-for="ProjectPcb" class="form-control" />
+                <span asp-validation-for="ProjectPcb" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectPcbPrice" class="control-label"></label>
+                <input asp-for="ProjectPcbPrice" class="form-control" />
+                <span asp-validation-for="ProjectPcbPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectSwitch" class="control-label"></label>
+                <input asp-for="ProjectSwitch" class="form-control" />
+                <span asp-validation-for="ProjectSwitch" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectSwitchQuant" class="control-label"></label>
+                <input asp-for="ProjectSwitchQuant" class="form-control" />
+                <span asp-validation-for="ProjectSwitchQuant" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectSwitchPrice" class="control-label"></label>
+                <input asp-for="ProjectSwitchPrice" class="form-control" />
+                <span asp-validation-for="ProjectSwitchPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectKeycap" class="control-label"></label>
+                <input asp-for="ProjectKeycap" class="form-control" />
+                <span asp-validation-for="ProjectKeycap" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectKeycapQuant" class="control-label"></label>
+                <input asp-for="ProjectKeycapQuant" class="form-control" />
+                <span asp-validation-for="ProjectKeycapQuant" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectKeycapPrice" class="control-label"></label>
+                <input asp-for="ProjectKeycapPrice" class="form-control" />
+                <span asp-validation-for="ProjectKeycapPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectStabilizer" class="control-label"></label>
+                <input asp-for="ProjectStabilizer" class="form-control" />
+                <span asp-validation-for="ProjectStabilizer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectStabilizerPrice" class="control-label"></label>
+                <input asp-for="ProjectStabilizerPrice" class="form-control" />
+                <span asp-validation-for="ProjectStabilizerPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectPrice" class="control-label"></label>
+                <input asp-for="ProjectPrice" class="form-control" />
+                <span asp-validation-for="ProjectPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
