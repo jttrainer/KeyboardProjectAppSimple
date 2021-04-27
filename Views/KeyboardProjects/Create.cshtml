@@ -7,7 +7,7 @@
 
 <h1>Create</h1>
 
-<h4>KeyboardProject</h4>
+<h4>Keyboard Project</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -89,8 +89,8 @@
                 <span asp-validation-for="ProjectStabilizerPrice" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ProjectPrice" class="control-label"></label>
-                <input asp-for="ProjectPrice" class="form-control" />
+                @*<label asp-for="ProjectPrice" class="control-label"></label>*@
+                <input type="hidden" asp-for="ProjectPrice" class="form-control" />
                 <span asp-validation-for="ProjectPrice" class="text-danger"></span>
             </div>
             <div class="form-group">

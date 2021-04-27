@@ -55,7 +55,7 @@ namespace KeyboardProjectAppSimple
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=KeyboardProjects}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
