@@ -5,109 +5,128 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
 
 <div>
-    <h4>KeyboardProject</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectKeyboardCase)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectKeyboardCase)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectKeyboardCasePrice)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectKeyboardCasePrice)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectSwitchplate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectSwitchplate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectSwitchplatePrice)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectSwitchplatePrice)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectPcb)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectPcb)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectPcbPrice)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectPcbPrice)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectSwitch)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectSwitch)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectSwitchQuant)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectSwitchQuant)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectSwitchPrice)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectSwitchPrice)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectKeycap)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectKeycap)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectKeycapQuant)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectKeycapQuant)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectKeycapPrice)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectKeycapPrice)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectStabilizer)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectStabilizer)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectStabilizerPrice)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectStabilizerPrice)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProjectPrice)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProjectPrice)
-        </dd>
-    </dl>
+    <h4>@Html.DisplayFor(model => model.ProjectName) Project Details</h4>
+    <table class="table">
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.ProjectKeyboardCase)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ProjectKeyboardCase)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.ProjectKeyboardCasePrice)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ProjectKeyboardCasePrice)
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.ProjectSwitchplate)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ProjectSwitchplate)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.ProjectSwitchplatePrice)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ProjectSwitchplatePrice)
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.ProjectPcb)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ProjectPcb)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.ProjectPcbPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ProjectPcbPrice)
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.ProjectSwitch)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ProjectSwitch)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.ProjectSwitchQuant)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ProjectSwitchQuant)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.ProjectSwitchPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ProjectSwitchPrice)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.ProjectKeycap)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ProjectKeycap)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.ProjectKeycapQuant)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ProjectKeycapQuant)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.ProjectKeycapPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ProjectKeycapPrice)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.ProjectStabilizer)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ProjectStabilizer)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.ProjectStabilizerPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ProjectStabilizerPrice)
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.ProjectPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ProjectPrice)
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.ProjectId">Edit</a> |
