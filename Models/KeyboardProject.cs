@@ -59,7 +59,7 @@ namespace KeyboardProjectAppSimple.Models
         public decimal ProjectStabilizerPrice { get; set; }
 
         [DisplayName("Total Project Cost")]
-        public decimal ProjectPrice { get => projectPrice; set => projectPrice = value = ProjectCost(); }
+        public decimal ProjectPrice => ProjectCost();
 
         public decimal ProjectCost()
         {
