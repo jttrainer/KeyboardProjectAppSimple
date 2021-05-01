@@ -69,6 +69,5 @@ namespace KeyboardProjectAppSimple.Models
 
             return projectCost;
         }
-
     }
 }
